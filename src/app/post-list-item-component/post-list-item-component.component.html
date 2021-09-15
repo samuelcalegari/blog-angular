@@ -1,6 +1,6 @@
 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" [ngClass]="getState()">
   <div class="d-flex w-100 justify-content-between">
-    <h5 class="mb-1">{{ post.title}}</h5>
+    <h5 class="mb-1">{{ post.title}} ({{ post.loveIts}})</h5>
     <small>{{ post.createdDate | date:'short'}}</small>
   </div>
   <p class="mb-1">{{ post.content}}</p>

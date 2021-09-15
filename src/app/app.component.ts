@@ -1,24 +1,18 @@
 import { Component } from '@angular/core';
+import {Post} from "./classes/post";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'blog';
 
-  posts = [{
-    title : 'Mon premier post',
-    content : 'bla bla',
-    loveIts : 1,
-  },{
-    title : 'Mon second post',
-    content : 'bla bla bla',
-    loveIts : 3,
-  },{
-    title : 'Encore un post',
-    content : 'pour finir ...',
-    loveIts : 0,
-  }];
+  posts = [
+    new Post('premier post','blabla',1, new Date()),
+    new Post('deuxieme post','blabla blabla',2, new Date()),
+    new Post('encore un post','blabla blabla blabla',3, new Date())
+  ];
 }
